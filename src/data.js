@@ -1,0 +1,2 @@
+export const data = [{name: 'spf' ,id : 1 , img:"https://cdn1.costatic.com/img/product/800/60afa5738f9b7/bioderma-photoderm-max-23012.jpg" ,cmimi: '3000 l'},{name: 'spf' ,id: 2,img:"https://cdn1.costatic.com/img/product/800/60afa5738f9b7/bioderma-photoderm-max-23012.jpg", cmimi: '3000 l'},{name: 'spf' ,id: 3 ,img:"https://cdn1.costatic.com/img/product/800/60afa5738f9b7/bioderma-photoderm-max-23012.jpg", cmimi: '3000 l'},
+  {name: 'Krem aknesh' ,id: 4, img:"https://www.merjabioprodukte.com/images/TueMay1110163020218756.png",cmimi: '3000 l'}]

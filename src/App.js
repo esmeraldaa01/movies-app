@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import  "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar } from './components/Navbar';
+import { Route, Switch, Redirect, Router } from 'react-router-dom'
+import { Liste } from './pages/Liste'
+import { ProductDetail} from './pages/ProductDetail'
+ import { SearchPage } from './pages/SearchPage'
 
-function App() {
+function App() { 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+    <div className="container">
+      <Switch>
+        <Route exact path="/liste" component={Liste} />
+        <Route exact path="/search" component={SearchPage} />
+        <Route path="/liste/:idd" component={ProductDetail} />
+        <Redirect to="/Liste" /> 
+      </Switch>
+    </div>
     </div>
   );
 }
