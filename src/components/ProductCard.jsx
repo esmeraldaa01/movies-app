@@ -5,7 +5,7 @@ export const ProductCard = (props) => {
     const history = useHistory();
     const movie = props.movie;
 
-  const neKlikim = () => { //ktu suptoj qe kjo shprehja m poshte /list/movie id nxjerr te dhenat e filmit 
+  const neKlikim = () => {  
       history.push(`/Liste/${movie.id}`)
   }
     return (
