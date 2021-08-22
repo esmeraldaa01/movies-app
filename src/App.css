@@ -2,13 +2,17 @@
   width: 200px;
   align-self: center;
   cursor: pointer;
+  border-radius: 10px;
 }
 
-.emer{
-border-radius: 10px;
-margin: 20px;
-display: flex;
-justify-content: center;
-flex-direction: column;
+.emer {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.4s all;
 }
 
+.emer:hover {
+  transform: scale(1.1);
+}
