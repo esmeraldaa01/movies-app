@@ -6,7 +6,7 @@ export const ProductCard = (props) => {
   const movie = props.movie;
 
   const neKlikim = () => {
-    history.push(`/Liste/${movie.id}`);
+    history.push(`/liste/${movie.id}`);
   };
   return (
     <div className="col col-md-3">

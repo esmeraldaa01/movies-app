@@ -16,3 +16,11 @@
 .emer:hover {
   transform: scale(1.1);
 }
+.navbar{
+background-color: #006600;
+}
+
+.pagination-container{
+  display: flex;
+  margin: 20px;
+}

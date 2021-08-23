@@ -2,22 +2,32 @@ import React,{useState,useEffect} from 'react'
 import { ProductCard } from '../components/ProductCard'
 import { getMoviesList } from '../services/getMovies'
 import  { searchm } from '../services/searchm'
+import {WithNavbar} from '../hoc/WithNavbar'
+import { Pagination } from '../components/Pagination'
 
-export const Liste = () => {
+ const Liste = () => {
   const [movies, setMovies] = useState([]);
+  const [page, setPage] = useState(1);
+
+  const onPageChange = page => {
+    setPage(page)
+  }
   
   useEffect(() => {
-    getMoviesList().then(data => {
+    getMoviesList(page).then(data => {
       setMovies(data.data.results)
-      console.log(data.data.results[0])
     });
-  }, [])
+  }, [page])
 
 
     return (
       
       <div className="row">
         {movies.map(movie => (<ProductCard movie={movie}  />) )} 
+        <Pagination onPageChange={onPageChange} />
       </div>
     )
 }
+
+export default WithNavbar(Liste);
+

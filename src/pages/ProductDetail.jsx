@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getMovieById } from "../services/getMovies";
 import "../styles/ProductDetail.scss";
+import {WithNavbar} from '../hoc/WithNavbar'
 
 export const ProductDetail = (props) => {
   let { idd } = useParams();
@@ -57,3 +58,5 @@ export const ProductDetail = (props) => {
     </div>
   );
 };
+
+export default WithNavbar(ProductDetail);

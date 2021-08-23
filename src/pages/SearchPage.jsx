@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { ProductCard } from "../components/ProductCard";
 import { getMoviesList } from "../services/getMovies";
 import { searchm } from "../services/searchm";
+import {WithNavbar} from '../hoc/WithNavbar'
 
-export const SearchPage = () => {
+ const SearchPage = () => {
   const [inputVal, setInputVal] = useState("");
   // const [movies, setMovies] = useState([]);
   const [searchMovies, setsearchMovies] = useState([]);
@@ -59,3 +60,5 @@ export const SearchPage = () => {
     </div>
   );
 };
+
+export default WithNavbar(SearchPage);

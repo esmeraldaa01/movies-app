@@ -1,20 +1,20 @@
 .productDetail {
-  height: 95vh;
+  height: calc(100vh-56px);
   width: 100vw;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
 
 .productImage {
-  height: 550px;
-  margin-top: 80px;
+  height: 500px;
+  margin-top: 70px;
   border-radius: 10px;
 }
 
 .descriptionSide {
-  margin-top: 100px;
+  margin-top: 70px;
   color: #adb5bd;
-  padding: 80px;
+  padding: 60px;
 }
 
 .movieTitle {
